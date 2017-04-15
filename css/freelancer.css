@@ -66,12 +66,6 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
-.img-resume {
-  margin: 0 auto;
-  border: 5px solid red;
-  width: "85";
-  height: "125";
-}
 header {
   text-align: center;
   background: #18BC9C;
@@ -189,6 +183,10 @@ section h2 {
 section.success {
   background: #18BC9C;
   color: white;
+}
+.service {
+    background: #bc4a18;
+    color:white;
 }
 @media (max-width: 767px) {
   section {
@@ -519,7 +517,4 @@ fieldset[disabled] .btn-success.active {
 }
 div#maincontent {
   outline: none;
-}
-#services {
-    background-color: #18BC9C;
 }
