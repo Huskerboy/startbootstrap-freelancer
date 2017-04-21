@@ -1,0 +1,14 @@
+.resred {
+    color: red;
+}
+.education {
+    font-size: 18px;
+    text-align: left;
+}
+.ride {
+    font-size: 18px;
+    text-align: left;
+}
+.img-circle {
+    border-radius: 50%;
+}
