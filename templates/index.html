@@ -12,14 +12,14 @@
     <title>Jay D Meyer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    <link href="css/style2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/freelancer.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style2.css')}}">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -76,7 +76,7 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="img/profilepic3.jpg" alt="" width="250" height="250">
+                    <img class="img-responsive img-circle" src="{{url_for('static', filename='img/profilepic3.jpg')}} "alt="" width="250" height="250">
                     <div class="intro-text">
                         <h1 class="name">Jay Meyer</h1>
                         <hr class="star-light">
@@ -164,7 +164,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
+                        <img src="{{url_for('static', filename='img/portfolio/cabin.png')}}" class="img-responsive" alt="Cabin">
                     </a>
                 </div>
                 <div class="col-sm-6 portfolio-item">
@@ -174,7 +174,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="Slice of cake">
+                        <img src="{{url_for('static', filename='img/portfolio/game.png')}}" class="img-responsive" alt="Slice of cake">
                     </a>
                 </div>
                 <div class="col-sm-12 portfolio-item">
@@ -184,7 +184,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
+                        <img src="{{url_for('static', filename='img/portfolio/safe.png')}}" class="img-responsive" alt="Safe">
                     </a>
                 </div>
                 <!--
@@ -335,7 +335,7 @@
                     <li class="education">Ensure that customers have the best possible experience through my own product expertise or that of a specialized sales associate.</li>
                 </div>
                 <br><br>
-                <p>There is a link to download located here <a href="img/resume_tech.docx">Resume</a></p>
+                <p>There is a link to download located here <a href="../static/img/resume_tech.docx">Resume</a></p>
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
         </div>
@@ -352,7 +352,7 @@
                 <div class="row">
                     <h2>Ride the Bus</h2>
                     <hr class="star-primary">
-                    <img src="img/ride.png" class="img-responsive img-centered" alt="">
+                    <img src="{{url_for('static', filename='img/ride.png')}}" class="img-responsive img-centered" alt="">
                     <p>Ride the Bus originated as a simple drinking game, but through the use of python I developed it into a game that could be run on the command prompt. It follows a very simple set of rules that
                     require to you correctly guess certain attributes of the next card. If you guess it right you move on to the next card in the sequence, if you guess it wrong you have to start over; there are four cards total.</p>
                         <ol>
@@ -387,29 +387,29 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-3">
-                            <img src="img/books/Jquery.jpg" width="200" height="250" class="img-responsive img-centered">
+                            <img src="{{url_for('static', filename='img/books/Jquery.jpg')}}" width="200" height="250" class="img-responsive img-centered">
                             <p>A Smarter way to Learn JQuery by Mark Myers</p>
                         </div>
                         <div class="col-lg-3">
-                            <img src="img/books/html.jpg" width="200" height="250" class="img-responsive img-centered">
+                            <img src="{{url_for('static', filename='img/books/html.jpg')}}" width="200" height="250" class="img-responsive img-centered">
                             <p>A Smarter way to Learn HTML and CSS</p>
                         </div>
                         <div class="col-lg-3">
-                            <img src="img/books/scope.jpg" width="210" height="320" class="img-responsive img-centered">
+                            <img src="{{url_for('static', filename='img/books/scope.jpg')}}" width="210" height="320" class="img-responsive img-centered">
                             <p>You don't know Javascript, a 6 part series by Kyle Simpson.</p>
                         </div>
                         <div class="col-lg-3">
-                            <img src="img/books/flaskweb.jpg" width="250" height="300" class="img-responsive img-centered">
+                            <img src="{{url_for('static', filename='img/books/flaskweb.jpg')}}" width="250" height="300" class="img-responsive img-centered">
                             <p>Flask Web Development by Miguel Grinberg</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="img/books/intropython.jpg" width="200" height="250" class="img-responsive img-centered">
+                            <img src="{{url_for('static', filename='img/books/intropython.jpg')}}" width="200" height="250" class="img-responsive img-centered">
                             <p>Introducing Python by Bill Lubanovic.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img src="img/books/api.jpg" width="200" height="250" class="img-responsive img-centered">
+                            <img src="{{url_for('static', filename='img/books/api.jpg')}}" width="200" height="250" class="img-responsive img-centered">
                             <p>An introduction to API's by Brian Cooksey</p>
                         </div>
                     </div>
@@ -457,21 +457,25 @@
     </div>
 
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- jQuery
+    <script src="../vendor/jquery/jquery.min.js"></script> -->
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- Contact Form JavaScript
+    <script src="../js/jqBootstrapValidation.js"></script>
+    <script src="../js/contact_me.js"></script> -->
+    <script src="{{url_for('static', filename='js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{url_for('static', filename='js/contact_me.js')}}"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
+    <!-- Theme JavaScript  <script src="../js/freelancer.min.js"></script> -->
+    <script src="{{url_for('static', filename='js/freelancer.min.js')}}"></script>
 
 </body>
 

@@ -184,10 +184,6 @@ section.success {
   background: #18BC9C;
   color: white;
 }
-.service {
-    background: #bc4a18;
-    color:white;
-}
 @media (max-width: 767px) {
   section {
     padding: 75px 0;
