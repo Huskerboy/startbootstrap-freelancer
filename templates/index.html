@@ -76,7 +76,7 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="{{url_for('static', filename='img/profilepic3.jpg')}} "alt="" width="250" height="250">
+                    <img class="img-responsive img-circle" src="{{url_for('static', filename='img/profilepic3.jpg')}}" alt="" width="250" height="250">
                     <div class="intro-text">
                         <h1 class="name">Jay Meyer</h1>
                         <hr class="star-light">
@@ -330,9 +330,10 @@
                     <p><strong>Javascript and JQuery:</strong> After developing a rudimentary understanding of Javascript, I skipped over to JQuery because it offered a much cleaner way of writing code for my websites. I learned that
                     JQuery is great for performing basic functions that deal with interaction within the website; such as clicking a button and triggering an event or action, but it doesn't have the power that JS has. This is when I got
                     into the "You don't Know Javascript" series. It really digs into the why and how Javascript does what it does, which provides a much deeper level of understanding of the language and its uses. I have only completed the
-                    "Scopes and Closures" book, and will next be moving into "This & Object Prototypes."</p>
-                    <p><strong>SQL:</strong> I learned SQL from Team Treehouse by completing their 10 hour SQL track. It focused mainly on SQLite and it went over topics ranging from: CRUD, to functions and Dates, Relational Databases, Joining Tables,
-                    and Sub Queries. You can take a look at my Treehouse profile <a href="https://teamtreehouse.com/jaymeyer" target="_blank">here</a> to see what I have been working on.</p>
+                    "Scopes and Closures" book, and will next be moving into "This & Object Prototypes." In addition, I have also been working on improving my JavaScript skills through Treehouse's Javascript tracks. They have dozens upon
+                    dozens of hours of videos that teach you everything you need to know. They integrate quizzes and code challenges into their curriculum to help ensure that you learn the material effectively.</p>
+                    <p><strong>SQL:</strong> I learned SQL from Team Treehouse by completing their 15 hour SQL track. It focused mainly on SQLite and it went over topics ranging from: CRUD, to functions and Dates, Relational Databases, Joining Tables,
+                    and Sub Queries. You can take a look at my Treehouse profile <a href="https://teamtreehouse.com/jaymeyer" target="_blank">here</a> to see what all I have been working on.</p>
                 </div>
                 <div class="row">
                     <h2 class="resred">Work History</h2>
@@ -369,7 +370,7 @@
                 <div class="row">
                     <h2>Ride the Bus</h2>
                     <hr class="star-primary">
-                    <img src="{{url_for('static', filename='img/ride.png')}}" class="img-responsive img-centered" alt="">
+                    <img src="{{url_for('static', filename='img/ride.png')}}" class="img-responsive img-centered" alt="python shell displaying game">
                     <p>Ride the Bus originated as a simple drinking game, but through the use of python I developed it into a game that could be run on the command prompt. It follows a very simple set of rules that
                     require to you correctly guess certain attributes of the next card. If you guess it right you move on to the next card in the sequence, if you guess it wrong you have to start over; there are four cards total.</p>
                         <ol>
@@ -380,9 +381,25 @@
                             matches that of one of the first two, then you must drink twice and restart.</li>
                             <li class="ride">Your fourth and final guess is to guess the suit of this card. Since it does not depend on the first 3 cards at all, the value can match that of the first 3 without penalty. </li>
                         </ol>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Hangman</h2>
+                        <hr class="star-primary">
+                        <img src="{{url_for('static', filename='img/hangman.png')}}" class="img-responsive img-centered" alt="python shell displaying game">
+                        <p>Hangman is another guessing game in which the computer randomly selects an NFL team from a list and then displays blank lines corresponding to the number of letters in the team name. Your
+                        job is to guess the the name of the team letter by letter. If there are less than 7 letters in the name, you get 5 strikes, if there are 7 or more you get 7 strikes.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Room Escape</h2>
+                        <hr class="star-primary">
+                        <img src="{{url_for('static', filename='img/room_escape.png')}}" class="img-responsive img-centered" alt="python shell displaying game">
+                        <p>In Room Escape, you are randomly dropped into a 5 by 5 grid, and you have to try to find the exit by moving one space at a time. There is also a monster who is randomly dropped onto the grid,
+                        if you find him then you lose the game, find the exit and you win!</p>
+                    </div>
                 </div>
             </div>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
